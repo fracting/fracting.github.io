@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV
+{
+width:50%;
+background-color:lightblue;
+}
+</style>
+</head>
+
+<body>
+
+<p>Click the "Try it" button to make sure that the DIV element's width never is below 400 pixels:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+<p>This DIV element has a defined width of 50%.</p>
+
+<p>The width of this DIV element.</p>
+
+</div>
+
+<div id="result">
+</div>
+
+<script>
+function myFunction()
+{
+document.getElementById("myDIV").style.minWidth = "10";
+document.getElementById("result").innerHTML = document.getElementById("myDiv").style.minWidth;
+//alert(document.getElementById("myDIV").style.minWidth);
+}
+</script>
+
+</body>
+</html>
