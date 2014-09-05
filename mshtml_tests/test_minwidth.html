@@ -8,32 +8,24 @@ width:50%;
 background-color:lightblue;
 }
 </style>
+<script>
+function set_minWidth() {
+    document.getElementById("myDIV").style.minWidth = "10";
+    document.getElementById("result").innerHTML = document.getElementById("myDIV").style.minWidth;
+}
+window.onload = set_minWidth;
+</script>
 </head>
 
 <body>
 
-<p>Click the "Try it" button to make sure that the DIV element's width never is below 400 pixels:</p>
-
-<button onclick="myFunction()">Try it</button>
-
 <div id="myDIV">
-<p>This DIV element has a defined width of 50%.</p>
-
-<p>The width of this DIV element.</p>
-
+haha myDIV
 </div>
 
 <div id="result">
+haha result
 </div>
-
-<script>
-function myFunction()
-{
-document.getElementById("myDIV").style.minWidth = "10";
-document.getElementById("result").innerHTML = document.getElementById("myDIV").style.minWidth;
-//alert(document.getElementById("myDIV").style.minWidth);
-}
-</script>
 
 </body>
 </html>
